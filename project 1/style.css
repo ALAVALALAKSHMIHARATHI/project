@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+}
+body {
+ width: 100%;
+}
+/*header start*/
+#header {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+#navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 50px;
+    padding-left: 20px;
+    font-size:15px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color:#550881;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 40%;
+    height: 2px;
+    background-color:#550881 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* home page */
+#hero{
+    background-image: url("hero.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top 100% right 0 ;
+    background-attachment: fixed;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+h4{
+    color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+h2{
+    color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+}
+h1{
+    color: rgb(3, 2, 24);
+    margin: 20px;
+    padding: 10px;
+    font-size: 60px;
+}
+p{
+    color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+#hero h4{
+    color: rgb(241, 231, 218);
+}
+#hero button{
+    background-image: url("background.jpg");
+    background-color: transparent;
+    color: black;
+    border : 1px solid;
+    padding:10px;
+    margin: 20px;
+    font-size: 20px;
+}
